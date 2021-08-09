@@ -1,11 +1,13 @@
-db:
-  image: mysql:5.7
-  ports:
-   - "3306:3306"
-   - "33060:33060"
-  volumes:
-   - ./db:/var/lib/mysql
-  environment:
-   - MYSQL_ROOT_PASSWORD=123
-   - MYSQL_DATABASE=phprs
-  network_mode: "host"
+version: '3'
+services:
+    db:
+      image: mysql:5.7
+      ports:
+      - "3306:3306"
+      - "33060:33060"
+      volumes:
+      - ./db:/var/lib/mysql
+      network_mode: bridge
+      environment:
+      - MYSQL_ROOT_PASSWORD=123
+      - MYSQL_DATABASE=phprs
