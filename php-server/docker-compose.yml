@@ -5,4 +5,3 @@ php:
    - "8043:443"
   volumes:
    - ./www:/var/www/html
-   network_mode: "host"
