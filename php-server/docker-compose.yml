@@ -1,0 +1,7 @@
+php:
+  build: .
+  ports:
+   - "8080:80"
+   - "8043:443"
+  volumes:
+   - ./www:/var/www/html
