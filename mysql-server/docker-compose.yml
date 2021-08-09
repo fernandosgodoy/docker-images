@@ -8,5 +8,3 @@ db:
   environment:
    - MYSQL_ROOT_PASSWORD=123
    - MYSQL_DATABASE=phprs
-  network:
-    - bridge
