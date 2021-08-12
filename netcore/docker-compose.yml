@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  sitename:
+    image: sitename
+    build:
+      context: .
+    ports:
+      - "54001:80"
+    networks:
+      - minha-network
+
+networks: 
+    minha-network:
+        driver: bridge
